@@ -1,0 +1,24 @@
+1)
+case [Relation of Head]
+WHEN "1" THEN "Self"
+WHEN "2" THEN "Spouse of Head"
+WHEN "3" THEN "married child"
+WHEN "4" THEN "spouse of married child"
+WHEN "5" THEN "unmarried child"
+WHEN "6" THEN "grandchild"
+WHEN "7" THEN "father"
+WHEN "8" THEN "brother"
+WHEN "9" THEN "servant"
+END
+
+2)
+if [Marital Status]="1" THEN
+   "never married"
+ELSEIF  [Marital Status]="2" THEN
+    "currently married"
+ELSEIF [Marital Status]="3" THEN
+    "widowed"
+ELSEIF [Marital Status]="4" THEN
+    "divorced"
+END
+
